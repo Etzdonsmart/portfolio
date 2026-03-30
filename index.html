@@ -1,40 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- index.html --><!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John's Portfolio</title>
-</head>
-<body>
-    <div>
-    
-    <h1>Udonsi John</h1>
-    <p>Electrical Engineer | Solar & Mini-Grid | Embedded Systems</p>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Portfolio</title>  <link rel="stylesheet" href="style.css">
+</head><body>  <nav>
+    <h2>John</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>  <section class="hero">
+    <div class="hero-text">
+      <h3>Hello!</h3>
+      <h1>I'm <span>John</span></h1>
+      <h2>Electrical Engineering Student </h2>
+      <p>Solar Power Systems | Frontend Developer | Embedded Systems & Robotics Enthusiast</p>
+      <button onclick="scrollToContact()">Let's Talk</button>
+    </div><div class="hero-img">
+  <img src="Assets/images/WhatsApp Image 2026-03-30 at 07.23.21.jpeg" alt="profile">
+</div>
+
+  </section>  <section id="about" class="section">
+    <h2>About <span>Me</span></h2>
+    <p>I am an Electrical Engineering student with skills in both electronics and frontend
+     development. I design and build electronic systems such as PCB circuits and embedded
+     projects, while also developing responsive web interfaces using HTML, CSS, and JavaScript.
+     I enjoy combining hardware and software to create practical and efficient solutions,
+      with a focus on embedded systems and modern web design.</p>
+  </section>  <section id="skills" class="section skills">
+    <h2>My <span>Skills</span></h2><div class="skill">
+  <p>HTML</p>
+  <div class="bar"><div class="fill html"></div></div>
+</div>
+
+<div class="skill">
+  <p>CSS</p>
+  <div class="bar"><div class="fill css"></div></div>
+</div>
+
+<div class="skill">
+  <p>JavaScript</p>
+  <div class="bar"><div class="fill js"></div></div>
+</div>
+
+  </section>  <section id="projects" class="section">
+    <h2>My <span>Projects</span></h2>
+    <div class="projects">
+      <div class="project-card"><a href="solar.html">Solar Power Systems</a></div>
+      <div class="project-card"><a href="frontend.html">Frontend Development</a></div>
+      <div class="project-card"><a href="robotics.html">Embedded Systems & Robotics</a></div>
     </div>
-    <h2>About Me</h2>
-    <p>
-        I am an electrical engineering professional with hands-on experience
-        in solar PV systems, mini-grid design, and growing expertise in
-        embedded systems and circuitry.
-    </p>
-
-    <h2>Skills</h2>
-    <ul>
-        <li>Solar PV system design and installation</li>
-        <li>Mini-grid architecture and load analysis</li>
-        <li>Electrical measurement and instrumentation</li>
-        <li>Embedded systems and circuit design</li>
-    </ul>
-
-    <h2>Projects</h2>
-    <ul>
-        <li>Standalone Solar PV System Design</li>
-        <li>Mini-Grid System for Residential Loads</li>
-        <li>Water Level Control System</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-</body>
+  </section>  <section id="contact" class="section contact">
+    <h2>Contact <span>Me</span></h2>
+    <a href="#">WhatsApp</a>
+    <a href="#">Email</a>
+  </section>  <script src="script.js"></script></body>
 </html>
